@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Show</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">TheatreShow.com</a>
+        </div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="shows.html">Shows</a></li>
+            <li><a href="auditoriums.html">Auditoriums</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="#magazines">Magazines</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Experience the Magic of Theatre</h1>
+            <p>Discover spectacular performances that will leave you spellbound</p>
+            <div class="hero-buttons">
+                <a href="shows.html" class="btn-primary">View Shows</a>
+                <a href="#upcoming" class="btn-secondary">Upcoming Events</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="featured" class="featured-section">
+        <h2>Featured Shows</h2>
+        <div class="featured-grid">
+            <div class="featured-card">
+                <div class="featured-image">
+                    <img src="hamlet.jpg" alt="Hamlet">
+                    <div class="featured-overlay">
+                        <a href="shows.html" class="btn-book">Book Now</a>
+                    </div>
+                </div>
+                <h3>Hamlet</h3>
+                <p>Shakespeare's masterpiece comes alive</p>
+            </div>
+            <!-- Add 2 more featured-card divs with different shows -->
+        </div>
+    </section>
+
+    <section id="shows" class="shows-section">
+        <h2>Theatre Shows</h2>
+        <div class="shows-grid">
+            <div class="show-category">
+                <h3>Urdu Theatre</h3>
+                <!-- Show listings will go here -->
+            </div>
+            <div class="show-category">
+                <h3>Hindi Theatre</h3>
+                <!-- Show listings will go here -->
+            </div>
+            <div class="show-category">
+                <h3>English Theatre</h3>
+                <!-- Show listings will go here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="upcoming" class="upcoming-section">
+        <h2>Upcoming Shows</h2>
+        <div class="events-grid">
+            <!-- Event cards will be inserted here -->
+        </div>
+    </section>
+
+    <section id="artists" class="artists-section">
+        <h2>Artist Gallery</h2>
+        <div class="artists-grid">
+            <div class="artist-card">
+                <div class="artist-image">
+                    <img src="artist1.jpg" alt="Artist Name">
+                    <div class="artist-overlay">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h3>John Doe</h3>
+                    <p class="artist-role">Lead Actor</p>
+                </div>
+            </div>
+            <!-- Add 2 more similar artist cards -->
+        </div>
+        <div class="section-cta">
+            <a href="artists.html" class="btn-primary">View All Artists</a>
+        </div>
+    </section>
+
+    <section id="theatre-speak" class="reviews-section">
+        <h2>Theatre Speak</h2>
+        <div class="reviews-grid">
+            <!-- Review cards will be inserted here -->
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <i class="fas fa-theater-masks"></i>
+                <h3>500+</h3>
+                <p>Shows Performed</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h3>100k+</h3>
+                <p>Happy Audiences</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-star"></i>
+                <h3>50+</h3>
+                <p>Award Winning Plays</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>123 Theatre Street, Arts District</p>
+                    <p>Mumbai, Maharashtra 400001</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 123-456-7890</p>
+                    <p>+91 098-765-4321</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@theatreshow.com</p>
+                    <p>support@theatreshow.com</p>
+                </div>
+            </div>
+
+            <div class="contact-social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-forms">
+                <div class="feedback-form">
+                    <h3>Feedback</h3>
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="feedbackName">Name</label>
+                            <input type="text" id="feedbackName" name="name" placeholder="Your name">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackEmail">Email</label>
+                            <input type="email" id="feedbackEmail" name="email" placeholder="Your email">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackMessage">Message</label>
+                            <textarea id="feedbackMessage" name="message" placeholder="Your feedback" rows="4"></textarea>
+                            <div class="error-message"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Feedback</button>
+                    </form>
+                </div>
+                <div class="query-form">
+                    <h3>Query</h3>
+                    <form id="queryForm">
+                        <div class="form-group">
+                            <label for="queryName">Name</label>
+                            <input type="text" id="queryName" name="name" placeholder="Your name">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="queryEmail">Email</label>
+                            <input type="email" id="queryEmail" name="email" placeholder="Your email">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="queryMessage">Message</label>
+                            <textarea id="queryMessage" name="message" placeholder="Your query" rows="4"></textarea>
+                            <div class="error-message"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Query</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.9367274263594!2d72.8270!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzMzLjYiTiA3MsKwNDknMzcuMiJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TheatreShow.com. All rights reserved.</p>
+    </footer>
+
+    <script src="Pass.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists - TheatreShow.com</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">TheatreShow.com</a>
+        </div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shows.html">Shows</a></li>
+            <li><a href="auditoriums.html">Auditoriums</a></li>
+            <li><a href="artists.html" class="active">Artists</a></li>
+            <li><a href="#magazines">Magazines</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="artists-hero">
+        <h1>Our Talented Artists</h1>
+        <p>Meet the incredible performers who bring magic to our stage</p>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search artists...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <section class="artists-container">
+        <div class="artists-filters">
+            <button class="filter-btn active" data-filter="all">All Artists</button>
+            <button class="filter-btn" data-filter="actors">Actors</button>
+            <button class="filter-btn" data-filter="directors">Directors</button>
+            <button class="filter-btn" data-filter="musicians">Musicians</button>
+            <button class="filter-btn" data-filter="dancers">Dancers</button>
+        </div>
+
+        <div class="artists-grid">
+            <!-- Actor Card -->
+            <div class="artist-card" data-category="actors">
+                <div class="artist-image">
+                    <img src="artist1.jpg" alt="John Doe">
+                    <div class="artist-overlay">
+                        <div class="social-links">
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <span class="artist-tag">Featured</span>
+                </div>
+                <div class="artist-info">
+                    <h3>John Doe</h3>
+                    <p class="artist-role">Lead Actor</p>
+                    <div class="artist-stats">
+                        <span><i class="fas fa-theater-masks"></i> 50+ Shows</span>
+                        <span><i class="fas fa-award"></i> 3 Awards</span>
+                    </div>
+                    <p class="artist-bio">Versatile performer with 10+ years of stage experience</p>
+                    <a href="#" class="btn-portfolio">View Portfolio</a>
+                </div>
+            </div>
+
+            <!-- Director Card -->
+            <div class="artist-card" data-category="directors">
+                <div class="artist-image">
+                    <img src="artist2.jpg" alt="Sarah Johnson">
+                    <div class="artist-overlay">
+                        <div class="social-links">
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h3>Sarah Johnson</h3>
+                    <p class="artist-role">Creative Director</p>
+                    <div class="artist-stats">
+                        <span><i class="fas fa-film"></i> 25+ Productions</span>
+                        <span><i class="fas fa-star"></i> 4 Awards</span>
+                    </div>
+                    <p class="artist-bio">Visionary director known for innovative productions</p>
+                    <a href="#" class="btn-portfolio">View Portfolio</a>
+                </div>
+            </div>
+
+            <!-- Add more artist cards for other categories -->
+        </div>
+    </section>
+
+    <section class="artist-spotlight">
+        <h2>Artist Spotlight</h2>
+        <div class="spotlight-grid">
+            <div class="spotlight-content">
+                <span class="spotlight-label">Featured Artist of the Month</span>
+                <h3>Sarah Johnson</h3>
+                <p class="spotlight-role">Creative Director</p>
+                <p class="spotlight-description">
+                    Award-winning theatre director known for groundbreaking productions and innovative storytelling approaches.
+                </p>
+                <div class="spotlight-achievements">
+                    <div class="achievement">
+                        <i class="fas fa-award"></i>
+                        <span>Best Director 2023</span>
+                    </div>
+                    <div class="achievement">
+                        <i class="fas fa-theater-masks"></i>
+                        <span>25+ Productions</span>
+                    </div>
+                </div>
+                <div class="spotlight-actions">
+                    <a href="#" class="btn-primary">Read Full Story</a>
+                    <a href="#" class="btn-secondary">Watch Interview</a>
+                </div>
+            </div>
+            <div class="spotlight-image">
+                <img src="spotlight-artist.jpg" alt="Sarah Johnson">
+                <div class="spotlight-badges">
+                    <span class="badge"><i class="fas fa-star"></i> Featured</span>
+                    <span class="badge"><i class="fas fa-certificate"></i> Award Winner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements-section">
+        <h2>Our Collective Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <i class="fas fa-award"></i>
+                <h3>150+</h3>
+                <p>Awards Won</p>
+            </div>
+            <div class="achievement-card">
+                <i class="fas fa-theater-masks"></i>
+                <h3>500+</h3>
+                <p>Productions</p>
+            </div>
+            <div class="achievement-card">
+                <i class="fas fa-users"></i>
+                <h3>100+</h3>
+                <p>Active Artists</p>
+            </div>
+            <div class="achievement-card">
+                <i class="fas fa-globe"></i>
+                <h3>30+</h3>
+                <p>Countries Performed</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TheatreShow.com. All rights reserved.</p>
+    </footer>
+
+    <script src="Pass.js"></script>
+</body>
+</html>

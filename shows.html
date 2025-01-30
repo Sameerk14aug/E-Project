@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Shows</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">TheatreShow.com</a>
+        </div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero" class="home-link">Home</a></li>
+            <li><a href="shows.html" class="active">Shows</a></li>
+            <li><a href="auditoriums.html">Auditoriums</a></li>
+            <li><a href="#artists">Artists</a></li>
+            <li><a href="#magazines">Magazines</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="shows-hero">
+        <h1>Our Theatre Shows</h1>
+        <p>Experience the magic of live performances</p>
+    </div>
+
+    <section class="shows-container">
+        <div class="shows-filter">
+            <button class="filter-btn active" data-filter="all">All Shows</button>
+            <button class="filter-btn" data-filter="urdu">Urdu</button>
+            <button class="filter-btn" data-filter="hindi">Hindi</button>
+            <button class="filter-btn" data-filter="english">English</button>
+        </div>
+
+        <div class="shows-gallery">
+            <!-- Show cards will be generated dynamically -->
+        </div>
+    </section>
+
+    <script src="shows.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Auditoriums</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">TheatreShow.com</a>
+        </div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="shows.html">Shows</a></li>
+            <li><a href="auditoriums.html" class="active">Auditoriums</a></li>
+            <li><a href="#artists">Artists</a></li>
+            <li><a href="#magazines">Magazines</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="auditoriums-hero">
+        <h1>Our Auditoriums</h1>
+        <p>Experience theatre in world-class venues</p>
+        <div class="search-container">
+            <input type="text" placeholder="Search by location or capacity..." class="search-input">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <section class="filter-section">
+        <div class="filter-container">
+            <button class="filter-btn active" data-capacity="all">All Venues</button>
+            <button class="filter-btn" data-capacity="small">Small (< 500)</button>
+            <button class="filter-btn" data-capacity="medium">Medium (500-1000)</button>
+            <button class="filter-btn" data-capacity="large">Large (1000+)</button>
+        </div>
+    </section>
+
+    <section class="auditoriums-container">
+        <div class="auditoriums-grid">
+            <div class="auditorium-card">
+                <div class="auditorium-image">
+                    <img src="grand-theatre.jpg" alt="Grand Theatre">
+                    <div class="venue-tag">Premium</div>
+                </div>
+                <div class="auditorium-info">
+                    <h3>Grand Theatre</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                    <p class="capacity"><i class="fas fa-users"></i> 1200 seats</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Downtown Arts District</p>
+                    <div class="amenities">
+                        <span><i class="fas fa-parking"></i> Parking</span>
+                        <span><i class="fas fa-wheelchair"></i> Accessible</span>
+                        <span><i class="fas fa-coffee"></i> Cafe</span>
+                        <span><i class="fas fa-wifi"></i> Wi-Fi</span>
+                    </div>
+                    <div class="price-info">
+                        <span class="price">From $1000/day</span>
+                        <a href="#book" class="btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more auditorium cards with different styles -->
+        </div>
+    </section>
+
+    <section class="facilities-section">
+        <h2>Premium Facilities</h2>
+        <div class="facilities-grid">
+            <div class="facility-item">
+                <i class="fas fa-volume-up"></i>
+                <h3>Sound System</h3>
+                <p>State-of-the-art Dolby audio equipment</p>
+            </div>
+            <div class="facility-item">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Lighting</h3>
+                <p>Professional stage lighting setup</p>
+            </div>
+            <div class="facility-item">
+                <i class="fas fa-couch"></i>
+                <h3>Seating</h3>
+                <p>Premium comfort seating</p>
+            </div>
+            <div class="facility-item">
+                <i class="fas fa-temperature-low"></i>
+                <h3>Climate Control</h3>
+                <p>Advanced HVAC system</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="virtual-tour">
+        <h2>Virtual Tour</h2>
+        <div class="tour-container">
+            <div class="tour-info">
+                <h3>Explore Our Venues</h3>
+                <p>Take a virtual walk through our world-class facilities</p>
+                <button class="tour-btn">Start Tour <i class="fas fa-vr-cardboard"></i></button>
+            </div>
+            <div class="tour-image">
+                <img src="virtual-tour.jpg" alt="Virtual Tour">
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-info">
+        <h2>Booking Information</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Check Availability</h3>
+                <p>View our calendar for available dates</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-file-contract"></i>
+                <h3>Terms & Conditions</h3>
+                <p>Read our booking policies</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-headset"></i>
+                <h3>Support</h3>
+                <p>24/7 customer assistance</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 TheatreShow.com. All rights reserved.</p>
+    </footer>
+
+    <script src="Pass.js"></script>
+</body>
+</html>
